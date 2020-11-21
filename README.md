@@ -4,7 +4,11 @@
 
 - edit issue should work. right now it fails, because integromat doesn't get SHA
 - github page from `.md`s
+    - ich will eine seite
+    - die hat viele box components
+    - die jeweils von einem .md gefeeded werden
 - can integromat trigger from webhook instead of `every 15 minutes`?
+
 
 ## alternative approaches
 
