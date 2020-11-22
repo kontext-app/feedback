@@ -1,22 +1,7 @@
 import React from "react";
-import Head from "next/head";
-import matter from "gray-matter";
-import Link from "next/link";
 
-import Landing from './landing';
-
-const Index = ({ data, title, description }) => {
-  const RealData = data.map((blog) => matter(blog));
-  const ListItems = RealData.map((listItem) => listItem.data);
-
+function Landing() {
   return (
-    <>
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta charSet="utf-8" />
-      <meta name="Description" content={description}></meta>
-      <title>{title}</title>
-    </Head>
     <div class="publicContainer">
       <div class="publicNav">
         <div class="contentContainer">
@@ -109,33 +94,312 @@ const Index = ({ data, title, description }) => {
                       <div className="roadmapColumn">
                          <div className="columnHeader">
                             <div className="dot underReview"></div>
-                            <div>Proposed Features</div>
+                            <div>Under Review</div>
                          </div>
                          <div className="scrollContainer scrollable">
                             <div className="postList">
                                <div className="topContainer"></div>
                                <div className="posts">
-
-
-                                 {ListItems.map((blog, i) => (
-                                   <div key={i} className="postListItem">
-                                      <div className="postVotes">
-                                         <div className="upvote"></div>
-                                         <span>5</span>
-                                      </div>
-                                      <Link href={`/${blog.slug}`}>
-                                        <a className="postLink">
-                                           <div className="body">
-                                              <div className="postTitle"><span>{blog.title}</span></div>
-                                              {/* if category = bug, then show this */}
-                                              <div className="uppercaseHeader boardName"> Bug report</div>
-                                           </div>
-                                        </a>
-                                      </Link>
-                                   </div>
-                                 ))}
-
-
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>5</span>
+                                     </div>
+                                     <a className="postLink" href="/bugs/p/chrome-extension-mini-app-editing-bookmark-description-lags">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Chrome extension Mini App editing bookmark description lags</span></div>
+                                           <div className="uppercaseHeader boardName"> Bug report</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>7</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/sorting-by-relevance-should-use-favorites">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Sorting by relevance should use favorites</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>22</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/comments">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Comments</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>16</span>
+                                     </div>
+                                     <a className="postLink" href="/bugs/p/safari-extensions">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Safari extensions</span></div>
+                                           <div className="uppercaseHeader boardName"> Bug report</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>7</span>
+                                     </div>
+                                     <a className="postLink" href="/bugs/p/no-cached-version-of-website">
+                                        <div className="body">
+                                           <div className="postTitle"><span>no cached version of website</span></div>
+                                           <div className="uppercaseHeader boardName"> Bug report</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>3</span>
+                                     </div>
+                                     <a className="postLink" href="/bugs/p/icons-from-iconfinder-doesnt-work">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Icons from iconfinder doesn't work</span></div>
+                                           <div className="uppercaseHeader boardName"> Bug report</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>2</span>
+                                     </div>
+                                     <a className="postLink" href="/bugs/p/cards-view-sometimes-cuts-off-images">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Cards View sometimes cuts off images</span></div>
+                                           <div className="uppercaseHeader boardName"> Bug report</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>14</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/shortcut-key-for-raindropio-safari-button">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Shortcut key for better.kontext.app safari button</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>51</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/tag-to-collection">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Tag to Collection</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>6</span>
+                                     </div>
+                                     <a className="postLink" href="/bugs/p/save-url-as-it-is">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Save URL as it is</span></div>
+                                           <div className="uppercaseHeader boardName"> Bug report</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>4</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/sites-views-similar-to-categories">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Sites Views Similar to Categories</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>9</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/mark-saved-item-as-not-an-article">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Mark saved item as not an article</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>6</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/support-portrait-ratio-images-in-moodboard">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Support portrait ratio images in moodboard</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>53</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/show-read-time">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Show Read Time</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>76</span>
+                                     </div>
+                                     <a className="postLink" href="/integrations/p/support-macos-spotlight-search">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Support macos Spotlight search</span></div>
+                                           <div className="uppercaseHeader boardName">Integration</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>1</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/auto-download-tiktok-and-instagram-content-video-image">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Auto download tiktok and instagram content (video, image)</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>683</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/smartvirtual-collections">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Smart/virtual collections</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>2</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/logout-when-browser-closes">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Logout when browser closes</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>4</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/import-fonts-to-bookmark">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Import Fonts to Bookmark</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>8</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/password-manager">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Password Manager</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>26</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/minimal-ui-without-screenshot-thumbnail-images-and-icons-just-plain-bw-text-and-">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Minimal UI without screenshot thumbnail images and icons. Just plain B/W text and lots of uncluttering white space.</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>21</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/temporary-collections-workspaces">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Temporary collections / workspaces</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>37</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/sync-images-to-dropbox-insted-of-html-with-links-1">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Sync images to dropbox insted of HTML with links</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>62</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/minimal-material-design-bw-icons-or-ability-to-not-have-icons-at-all">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Minimal Material Design B/W icons or ability to not have icons at all!</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
+                                  <div className="postListItem">
+                                     <div className="postVotes">
+                                        <div className="upvote"></div>
+                                        <span>102</span>
+                                     </div>
+                                     <a className="postLink" href="/feature-requests/p/export-to-more-file-types">
+                                        <div className="body">
+                                           <div className="postTitle"><span>Export to more file types</span></div>
+                                           <div className="uppercaseHeader boardName">Feature request</div>
+                                        </div>
+                                     </a>
+                                  </div>
                                </div>
                             </div>
                             <div className="roadmapLoadMore"></div>
@@ -144,7 +408,7 @@ const Index = ({ data, title, description }) => {
                       <div className="roadmapColumn">
                          <div className="columnHeader">
                             <div className="dot planned"></div>
-                            <div>Funded Features</div>
+                            <div>Planned</div>
                          </div>
                          <div className="scrollContainer scrollable">
                             <div className="postList">
@@ -503,34 +767,7 @@ const Index = ({ data, title, description }) => {
         </div>
         </div>
     </div>
-    </>
   );
-};
-
-export default Index;
-
-export async function getStaticProps() {
-  const siteData = await import(`../config.json`);
-  const fs = require("fs");
-
-  const files = fs.readdirSync(`${process.cwd()}/content`, "utf-8");
-
-  const blogs = files.filter((fn) => fn.endsWith(".md"));
-
-  const data = blogs.map((blog) => {
-    const path = `${process.cwd()}/content/${blog}`;
-    const rawContent = fs.readFileSync(path, {
-      encoding: "utf-8",
-    });
-
-    return rawContent;
-  });
-
-  return {
-    props: {
-      data: data,
-      title: siteData.default.title,
-      description: siteData.default.description,
-    },
-  };
 }
+
+export default Landing;
