@@ -124,26 +124,27 @@ const Index = ({ data, title, description }) => {
                                <div className="topContainer"></div>
                                <div className="posts">
                                  {ListItems.map((blog, i) => (
+                                   blog.state == "proposed" &&
                                    <div key={i} className="postListItem">
-                                      <div className="postVotes">
-                                         <div className="upvote"></div>
-                                         <span>5</span>
-                                      </div>
-                                      <Link href={`/${blog.slug}`}>
-                                        <a className="postLink">
-                                           <div className="body">
-                                              <div className="postTitle"><span>{blog.title}</span></div>
-                                              { blog.category == "bug" ?
-                                              <div className="uppercaseHeader boardName">Bug Report</div>
-                                                : blog.category == "feature" ?
-                                                <div className="uppercaseHeader boardName">Feature Request</div>
-                                                : blog.category == "translation" ?
-                                                <div className="uppercaseHeader boardName">Translation</div>
-                                                : <div className="uppercaseHeader boardName">Other</div>
-                                              }
-                                           </div>
-                                        </a>
-                                      </Link>
+                                    <div className="postVotes">
+                                       <div className="upvote"></div>
+                                       <span>5</span>
+                                    </div>
+                                    <Link href={`/${blog.slug}`}>
+                                      <a className="postLink">
+                                         <div className="body">
+                                            <div className="postTitle"><span>{blog.title}</span></div>
+                                            { blog.category == "bug" ?
+                                            <div className="uppercaseHeader boardName">Bug Report</div>
+                                              : blog.category == "feature" ?
+                                              <div className="uppercaseHeader boardName">Feature Request</div>
+                                              : blog.category == "translation" ?
+                                              <div className="uppercaseHeader boardName">Translation</div>
+                                              : <div className="uppercaseHeader boardName">Other</div>
+                                            }
+                                         </div>
+                                      </a>
+                                    </Link>
                                    </div>
                                  ))}
                                </div>
@@ -161,28 +162,29 @@ const Index = ({ data, title, description }) => {
                                <div className="topContainer"></div>
                                <div className="posts">
                                  {ListItems.map((blog, i) => (
+                                   blog.state == "funding" &&
                                    <div key={i} className="postListItem">
-                                      <div className="postVotes">
-                                         <div className="upvote"></div>
-                                         <span>5</span>
-                                      </div>
-                                      <Link href={`/${blog.slug}`}>
-                                        <a className="postLink">
-                                           <div className="body">
-                                              <div className="postTitle"><span>{blog.title}</span></div>
-                                              {/* if category = bug, then show this */}
+                                    <div className="postVotes">
+                                       <div className="upvote"></div>
+                                       <span>5</span>
+                                    </div>
+                                    <Link href={`/${blog.slug}`}>
+                                      <a className="postLink">
+                                         <div className="body">
+                                            <div className="postTitle"><span>{blog.title}</span></div>
+                                            {/* if category = bug, then show this */}
 
-                                              { blog.category == "bug" ?
-                                              <div className="uppercaseHeader boardName">Bug Report</div>
-                                                : blog.category == "feature" ?
-                                                <div className="uppercaseHeader boardName">Feature Request</div>
-                                                : blog.category == "translation" ?
-                                                <div className="uppercaseHeader boardName">Translation</div>
-                                                : <div className="uppercaseHeader boardName">Other</div>
-                                              }
-                                           </div>
-                                        </a>
-                                      </Link>
+                                            { blog.category == "bug" ?
+                                            <div className="uppercaseHeader boardName">Bug Report</div>
+                                              : blog.category == "feature" ?
+                                              <div className="uppercaseHeader boardName">Feature Request</div>
+                                              : blog.category == "translation" ?
+                                              <div className="uppercaseHeader boardName">Translation</div>
+                                              : <div className="uppercaseHeader boardName">Other</div>
+                                            }
+                                         </div>
+                                      </a>
+                                    </Link>
                                    </div>
                                  ))}
                                </div>
@@ -200,28 +202,29 @@ const Index = ({ data, title, description }) => {
                                <div className="topContainer"></div>
                                <div className="posts">
                                  {ListItems.map((blog, i) => (
+                                   blog.state == "building" &&
                                    <div key={i} className="postListItem">
-                                      <div className="postVotes">
-                                         <div className="upvote"></div>
-                                         <span>5</span>
-                                      </div>
-                                      <Link href={`/${blog.slug}`}>
-                                        <a className="postLink">
-                                           <div className="body">
-                                              <div className="postTitle"><span>{blog.title}</span></div>
-                                              {/* if category = bug, then show this */}
+                                    <div className="postVotes">
+                                       <div className="upvote"></div>
+                                       <span>5</span>
+                                    </div>
+                                    <Link href={`/${blog.slug}`}>
+                                      <a className="postLink">
+                                         <div className="body">
+                                            <div className="postTitle"><span>{blog.title}</span></div>
+                                            {/* if category = bug, then show this */}
 
-                                              { blog.category == "bug" ?
-                                              <div className="uppercaseHeader boardName">Bug Report</div>
-                                                : blog.category == "feature" ?
-                                                <div className="uppercaseHeader boardName">Feature Request</div>
-                                                : blog.category == "translation" ?
-                                                <div className="uppercaseHeader boardName">Translation</div>
-                                                : <div className="uppercaseHeader boardName">Other</div>
-                                              }
-                                           </div>
-                                        </a>
-                                      </Link>
+                                            { blog.category == "bug" ?
+                                            <div className="uppercaseHeader boardName">Bug Report</div>
+                                              : blog.category == "feature" ?
+                                              <div className="uppercaseHeader boardName">Feature Request</div>
+                                              : blog.category == "translation" ?
+                                              <div className="uppercaseHeader boardName">Translation</div>
+                                              : <div className="uppercaseHeader boardName">Other</div>
+                                            }
+                                         </div>
+                                      </a>
+                                    </Link>
                                    </div>
                                  ))}
                                </div>
