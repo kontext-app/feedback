@@ -9,6 +9,13 @@ const Index = ({ data, title, description }) => {
   const RealData = data.map((blog) => matter(blog));
   const ListItems = RealData.map((listItem) => listItem.data);
 
+  /* try to put the issues to different boxes, depending on their `state` */
+  /*
+  const ProposedItems = listItem.state == "proposed" && RealData.map((listItem) => listItem.data);
+  const FundingItems = listItem.state == "funding" && RealData.map((listItem) => listItem.data);
+  const BuildingItems = listItem.state == "building" && RealData.map((listItem) => listItem.data);
+  const ClosedItems = listItem.state == "closed" && RealData.map((listItem) => listItem.data);
+  */
 
   return (
     <>
