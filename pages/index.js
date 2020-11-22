@@ -189,7 +189,8 @@ const Index = ({ data, title, description }) => {
                 </div>
              </div>
              <div className="bottomContainer">
-                <div className="cannyAttribution"><a href="https://canny.io/powered-by-canny" rel="noopener" target="_blank" className="attribution">Inspired&nbsp;by&nbsp;Canny</a></div>
+              <div className="cannyAttribution"><a href="https://github.com/seichris/issues-to-website/issues" rel="noopener" target="_blank" className="attribution">Add issues at github.com/seichris/issues-to-website/issues</a></div>
+              <div className="cannyAttribution"><a href="https://canny.io/powered-by-canny" rel="noopener" target="_blank" className="attribution">Inspired&nbsp;by&nbsp;Canny</a></div>
              </div>
           </div>
         </div>
