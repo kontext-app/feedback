@@ -1,4 +1,4 @@
-Export of Github issues for [seichris/issues-to-website](https://github.com/seichris/issues-to-website). Generated on 2020.11.27 at 09:03:20.
+Export of Github issues for [seichris/issues-to-website](https://github.com/seichris/issues-to-website). Generated on 2020.11.27 at 09:04:24.
 
 # [\#18 Issue](https://github.com/seichris/issues-to-website/issues/18) `open`: ToDo
 
@@ -7,7 +7,7 @@ Export of Github issues for [seichris/issues-to-website](https://github.com/seic
 - [x] opening/editing/closing issue triggers script
 - [x] script saves all issues into `issues.md`
 - [ ] create one file per issue https://github.com/mattduck/gh2md/issues/13
-- [ ] format should be in format for https://github.com/seichris/issues-to-website:
+- [ ] format for the `.md` files should be similar to the files in `/content`
 
 ```
 ---
