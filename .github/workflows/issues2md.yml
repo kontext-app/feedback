@@ -15,7 +15,7 @@ jobs:
       run: |
         pip3 install --user --upgrade setuptools
         pip3 install --user gh2md
-        $HOME/.local/bin/gh2md $GITHUB_REPOSITORY issues.md --token ${{ secrets.GITHUB_TOKEN }} --no-prs
+        $HOME/.local/bin/gh2md $GITHUB_REPOSITORY issues.md --token ${{ secrets.GITHUB_TOKEN }} --no-prs --no-closed-issues
         git add issues.md
     - name: Commit files
       run: |
