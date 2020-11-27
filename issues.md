@@ -1,6 +1,6 @@
-Export of Github issues for [seichris/issues-to-website](https://github.com/seichris/issues-to-website). Generated on 2020.11.27 at 09:04:24.
+Export of Github issues for [seichris/issues-to-website](https://github.com/seichris/issues-to-website). Generated on 2020.11.27 at 09:09:17.
 
-# [\#18 Issue](https://github.com/seichris/issues-to-website/issues/18) `open`: ToDo
+# [\#18 Issue](https://github.com/seichris/issues-to-website/issues/18) `open`: ToDo: Website should build from open issues
 
 #### <img src="https://avatars0.githubusercontent.com/u/25006584?v=4" width="50">[Chris Seifert](https://github.com/seichris) opened issue at [2020-11-27 08:45](https://github.com/seichris/issues-to-website/issues/18):
 
@@ -28,7 +28,15 @@ url: https://github.com/seichris/issues-to-website/issues/10
 issue body
 ```
 
+#### <img src="https://avatars0.githubusercontent.com/u/25006584?v=4" width="50">[Chris Seifert](https://github.com/seichris) commented at [2020-11-27 09:08](https://github.com/seichris/issues-to-website/issues/18#issuecomment-734728337):
 
+Once the website builds from open issues, we want to allow
+- devs to set a price per issue
+- funders to fund an escrow contract
+- a service that watches the contract, to notify devs and funders if funding reached the price, and the issue can be worked on.
+
+
+See https://www.figma.com/file/HG3SMVhTwfLUeIU04UoXDg/better.kontext.app-bounty-user-feedback?node-id=2%3A40
 
 
 -------------------------------------------------------------------------------
