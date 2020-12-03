@@ -1,53 +1,23 @@
-# issues-to-website
+This is work in progress.
 
-First I used integromat to create `.md` files from each issue. Now I switched to github actions.
+**We want to let anyone crowfund dApp features.**
+
+1. A developer sets a funding goal for an issue,
+2. Others fund it,
+3. The dev builds the feature and collects the bounty.
+
+Use a chrome extension to show funding progress directly in github issues (and collect feedback in the dApp, or on Twitter):
+
+![image](https://i.imgur.com/5bVkDLq.jpg)
+
+**Tech we need:**
+
+- **a github action (python)**, turning github issues (like [https://github.com/seichris/issues-to-website/issues](https://github.com/seichris/issues-to-website/issues)) into a neat website (like [https://issues-to-website.vercel.app/](https://issues-to-website.vercel.app/))
+- an escrow **smart contract**
+- a service that watches the escrow contract
+- **a chrome extension** that updates the funding UI on github / in the dApp UI / on Twitter (could also just be a gh PR message bot)
 
 ## to do
 
 https://github.com/seichris/issues-to-website/issues/18
 
-
-## alternative approaches
-
-### local
-
-https://github.com/maxlath/backup-github-repo
-https://github.com/mattduck/gh2md
-https://github.com/jlord/offline-issues
-
----
-
-uses `react-markdown`, `gray-matter`, `raw-loader`, `react-syntax-highlighter`
-
----
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
