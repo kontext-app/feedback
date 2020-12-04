@@ -1,4 +1,4 @@
-Export of Github issues for [kontext-app/feedback](https://github.com/kontext-app/feedback). Generated on 2020.12.04 at 08:17:06.
+Export of Github issues for [kontext-app/feedback](https://github.com/kontext-app/feedback). Generated on 2020.12.04 at 09:00:37.
 
 # [\#18 Issue](https://github.com/kontext-app/feedback/issues/18) `open`: ToDo: Website should build from open issues
 
@@ -97,7 +97,9 @@ Please.
 
 #### <img src="https://avatars0.githubusercontent.com/u/25006584?v=4" width="50">[Chris Seifert](https://github.com/seichris) opened issue at [2020-11-22 19:29](https://github.com/kontext-app/feedback/issues/14):
 
-Single line test.
+I want this feature. But it's currently broken.
+
+I would pay $10 to get this implemented.
 
 
 
