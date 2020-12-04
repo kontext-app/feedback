@@ -17,7 +17,7 @@ Use a chrome extension to show funding progress directly in github issues (and c
 - a service that watches the escrow contract
 - **a chrome extension** that updates the funding UI on github / in the dApp UI / on Twitter (could also just be a gh PR message bot)
 
-## to do
+To do: https://github.com/seichris/issues-to-website/issues/18
 
-https://github.com/seichris/issues-to-website/issues/18
-
+See the user flow [in this Figma board](https://www.figma.com/file/HG3SMVhTwfLUeIU04UoXDg/better.kontext.app-bounty-user-feedback?node-id=0%3A1):
+![user flow](https://i.imgur.com/8NzUKOh.png)
